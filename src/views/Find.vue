@@ -1,11 +1,17 @@
 <template>
+<!-- 引入轮播组件-->
   <div>
+    <van-sticky>
+      <Carousel />
+    </van-sticky>
+ 
     课程
     <TabBar />
   </div>
 </template>
 
 <script>
+import Carousel from '../components/Carousel'
 import TabBar from '../components/tabBar/TabBar'
 export default {
   name: 'Class',
@@ -13,6 +19,7 @@ export default {
     return {}
   },
   components: {
+    Carousel,
     TabBar
   },
   created() {},

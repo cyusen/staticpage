@@ -17,7 +17,7 @@ const routes = [
         name: 'FirstPage',
         component: FirstPage
       },
-      {
+      { 
         path: '/class',
         name: 'Class',
         component: () => import('../views/Class.vue')

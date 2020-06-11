@@ -1,12 +1,19 @@
 <template>
-  <div class="all">
-    <div class="one">
-      <input   class="input"  placeholder="查询英文或者中文">
+<div>
+<div class="one">
+      
+      <input   class="input" placeholder="查询英文或者中文">
       <img class="img" src="@/assets/images/drawable-xhdpi/ld.png" width="20px" height="20px">
     </div>
+  <div class="all">
+    <div class="cc"></div>
+    
     <div class="two">
+      <div class="hi" >
+      <img src="@/assets/images/drawable-xhdpi/hi.png" alt="" width="200px">
+    </div>
       <ul class="li1">
-      <span>80</span>
+        <span>80</span>
       <li>新单词</li>
       <span>80</span>
       <li>今日单词</li>
@@ -33,8 +40,18 @@
       <li>炼句</li>
       </ul>
     </div>
-    <div class="last">-扇贝热卖-</div>
+    <div class="last">
+    <div >-扇贝热卖-</div>
+    <div>
+      <ul>
+      <img class="img2" src="@/assets/images/drawable-xhdpi/t1.png" alt="" width="120px" height="145px">
+      <img class="img2" src="@/assets/images/drawable-xhdpi/t2.png" alt="" width="120px" height="145px">
+      <img class="img2" src="@/assets/images/drawable-xhdpi/t3.png" alt="" width="120px" height="145px">
+      </ul>
+    </div>
+    </div>
     <TabBar />
+  </div>
   </div>
 </template>
 
@@ -57,45 +74,65 @@ export default {
 
 <style scoped lang="scss">
 .all{
-  background: gray;
+  background: rgb(236, 233, 233);
+}
+.cc{
+  height: 1px;
+  margin-top: 70px;
+  background: rgb(236, 233, 233);
+}
+.hi{
+  height: 130px;
+  background: #fff;
+  padding-top: 20px;
+  text-align: center;
+  border-bottom: 1px solid #999;
 }
 .one{
+  position: fixed;
+  top: 0;
   margin-top: -10px;
   width: 100%;
-  position:fixed;
-  height: 50px;
+  height: 80px;
   background:#fff;
 }
 .input{
+  padding-left: 30px;
   position:absolute;
-  margin-top: 20px;
+  margin-top: 30px;
   background: rgb(242, 242,242);
   margin-left: 20px;
   width: 330px;
   height: 30px;
 }
 .img{
-  margin-top: 23px;
+  margin-top: 33px;
   margin-left: 375px;}
 .two{
   padding-left: 15px;
   padding-right: 15px;
   margin-top: 5px;
-  height: 330px;
+  height: 320px;
   background:#fff;
 }
-.li1{
-  height: 240px;
-}
+
 span{
   position: absolute;
-  margin-top: 150px;
+  padding-top: 35px;
+  padding-left: 35px;
+  font-size: 30px;
+  color: rgb(114, 108, 108);
+  font-weight: bold;
+}
+.li1{
+  height: 115px;
 }
 .li1 li{
-  margin-top: 190px;
   color: #999;
+  font-size: 13px;
   text-align: center;
   width: 25%;
+  padding-top: 70px;
   float: left;
   list-style: none;
 }
@@ -105,7 +142,7 @@ button{
   width: 130px;
   display: block;
   margin: 0 auto;
-  background: rgb(31, 157, 133);
+  background: rgb(41, 190, 160);
   border-radius: 40px;
 }
 .three{
@@ -117,12 +154,12 @@ button{
 .img1{
   position:absolute;
   margin-top: 30px;
-  margin-left: 27.5px;
+  margin-left: 30px;
 }
 .li2 li{
   text-align: center;
   width: 20%;
-  padding-top: 70px;
+  padding-top: 65px;
   float: left;
   list-style: none;
 }
@@ -131,7 +168,11 @@ button{
   color: #999;
   text-align: center;
   margin-top: 5px;
-  height: 500px;
+  height: 250px;
   background: #fff;
+}
+.img2{
+  
+  margin-left:0px;
 }
 </style>
