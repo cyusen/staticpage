@@ -11,7 +11,7 @@
       <div class="wrap">
         <img style="height:100px; width:300px" src="https://i.loli.net/2020/05/25/caLQWHX4MArs1fx.png" alt="轮播图1" />
         <img style="height:100px; width:300px" src="https://i.loli.net/2020/05/25/DpRrHlquGKiFLbT.jpg" alt="轮播图2" />
-        <img style="height:100px; width:300px" src="https://i.loli.net/2020/05/25/AYeJ46ZMRStwH1D.jpg" alt="轮播图3" />
+        <img style="height:100px; width:300px"  src="https://i.loli.net/2020/05/25/AYeJ46ZMRStwH1D.jpg" alt="轮播图3" />
       </div>
       <div class="page">
         <label for="pic1"></label>

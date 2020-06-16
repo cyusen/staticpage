@@ -2,42 +2,43 @@
   <div>
     <div class="one">
       <input   class="input"  placeholder="查询英文或者中文">
-      <img class="img" src="@/assets/images/drawable-xhdpi/ld.png" width="20px" height="20px">
+      <img class="img" src="@/assets/images/drawable-xhdpi/ld.png" width="20px" height="20px" @click="goNotice" >
     </div>
   <div class="all">
     <div class="two" >
       <div class="head">
         <img src="@/assets/images/drawable-xhdpi/tx.jpg" alt="">
       </div>
-      <div>
+      <div class="head1">
       <div class="name">陈雨森</div>
       <div class="id">扇贝id：12344321</div>
+      <div class="xian"></div>
       <div class="card">打卡0天</div>
       <div class="l">|</div>
       <div class="hui">徽章0个</div>
       </div>
     </div>
     <div class="three">
-      <div>
+      <div @click="goDcs">
         <img src="@/assets/images/drawable-xhdpi/dcs.png" alt="" width="30px" height="30px">
         <p>单词书</p>
       </div>
-      <div>
+      <div @click="goCk">
         <img src="@/assets/images/drawable-xhdpi/wdck.png" alt="" width="30px" height="30px">
         <p>我的词库</p>
       </div>
-      <div>
+      <div @click="goJd">
         <img src="@/assets/images/drawable-xhdpi/dcjd.png" alt="" width="30px" height="30px">
         <p>单词进度</p>
       </div>
-      <div>
+      <div @click="Kzb">
         <img src="@/assets/images/drawable-xhdpi/kzb.png" alt="" width="30px" height="30px">
         <p>扩展包</p>
       </div>
     </div>
     <div class="four">
       <ul class="fourth">
-        <li>课程<span>&rsaquo;</span></li>
+        <li  @click="goClass">课程<span>&rsaquo;</span></li>
         <li>贝壳<span>&rsaquo;</span><span class="shu">0个</span></li>
         <li>兑换<span>&rsaquo;</span></li>
         <li>活动<span>&rsaquo;</span></li>
@@ -62,7 +63,7 @@
 <script>
 import TabBar from '../components/tabBar/TabBar'
 export default {
-  name: 'Class',
+  name: 'Personal',
   data() {
     return {}
   },
@@ -71,7 +72,20 @@ export default {
   },
   created() {},
   mounted() {},
-  methods: {},
+  methods: {
+    goNotice(){
+      this.$router.push('/notice')
+    },
+    goDcs(){
+      this.$router.push('/word')
+    },
+    goCk(){
+      this.$router.push('/myword')
+    },
+    goClass(){
+      this.$router.push('/myclass')
+    }
+  },
   computed: {}
 }
 </script>
@@ -92,12 +106,12 @@ export default {
   margin-top: 30px;
   background: rgb(242, 242,242);
   margin-left: 20px;
-  width: 330px;
+  width: 310px;
   height: 30px;
 }
 .img{
   margin-top: 33px;
-  margin-left: 375px;}
+  margin-left: 340px;}
 .all{
   background: rgb(236, 233, 233);
 }
@@ -108,8 +122,8 @@ export default {
   height: 180px;
   background: white;
 }
+
 .head img{
-  
   width: 70px;
   height: 70px;
   background:#000;
@@ -124,8 +138,11 @@ export default {
   padding-left: 80px;
   font-size: 13px;
   color: #999;
-  border-bottom: 1px solid #999;
+  
 }
+.xian{
+  margin-left: 80px;
+  border-bottom: 1px solid #999;}
 .card{
   margin-top: 10px;
   padding-left: 80px;
@@ -185,7 +202,7 @@ export default {
   padding-left: 15px;
   padding-right: 15px;
   margin-top: 10px;
-  height: 1180px;
+  height: 180px;
   background: white;
 }
 .end li{

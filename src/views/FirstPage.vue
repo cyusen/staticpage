@@ -1,7 +1,6 @@
 <template>
 <div>
 <div class="one">
-      
       <input   class="input" placeholder="查询英文或者中文">
       <img class="img" src="@/assets/images/drawable-xhdpi/ld.png" width="20px" height="20px">
     </div>
@@ -102,12 +101,12 @@ export default {
   margin-top: 30px;
   background: rgb(242, 242,242);
   margin-left: 20px;
-  width: 330px;
+  width: 300px;
   height: 30px;
 }
 .img{
   margin-top: 33px;
-  margin-left: 375px;}
+  margin-left: 335px;}
 .two{
   padding-left: 15px;
   padding-right: 15px;
@@ -119,7 +118,7 @@ export default {
 span{
   position: absolute;
   padding-top: 35px;
-  padding-left: 35px;
+  padding-left: 28px;
   font-size: 30px;
   color: rgb(114, 108, 108);
   font-weight: bold;
