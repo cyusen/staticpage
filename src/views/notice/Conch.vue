@@ -77,6 +77,7 @@ span{
     font-size: 45px;
 }
 button{
+    
     color: rgb(33,159,134);
     width: 250px;
     height: 45px;
