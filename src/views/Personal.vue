@@ -31,7 +31,7 @@
         <img src="@/assets/images/drawable-xhdpi/dcjd.png" alt="" width="30px" height="30px">
         <p>单词进度</p>
       </div>
-      <div @click="Kzb">
+      <div @click="goKzb">
         <img src="@/assets/images/drawable-xhdpi/kzb.png" alt="" width="30px" height="30px">
         <p>扩展包</p>
       </div>
@@ -39,7 +39,7 @@
     <div class="four">
       <ul class="fourth">
         <li  @click="goClass">课程<span>&rsaquo;</span></li>
-        <li>贝壳<span>&rsaquo;</span><span class="shu">0个</span></li>
+        <li @click="goConch">贝壳<span>&rsaquo;</span><span class="shu">0个</span></li>
         <li>兑换<span>&rsaquo;</span></li>
         <li>活动<span>&rsaquo;</span></li>
       </ul>
@@ -76,6 +76,9 @@ export default {
     goNotice(){
       this.$router.push('/notice')
     },
+    goConch(){
+      this.$router.push('/conch')
+    },
     goDcs(){
       this.$router.push('/word')
     },
@@ -84,6 +87,9 @@ export default {
     },
     goClass(){
       this.$router.push('/myclass')
+    },
+    goKzb(){
+      this.$router.push('/bag')
     }
   },
   computed: {}

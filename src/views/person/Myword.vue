@@ -1,9 +1,9 @@
 <template>
   <div>
     <div class="one">
-      <img class="img0" src="@/assets/images/drawable-xhdpi/jt.png" width="20px">
+      <img class="img0" src="@/assets/images/drawable-xhdpi/jt.png" width="20px" @click="goPersonal">
       <p>我的词库</p>
-      <img class="img" src="@/assets/images/drawable-xhdpi/ck2.png" width="35px">
+      <img class="img" src="@/assets/images/drawable-xhdpi/ck2.png" width="35px" @click="goClear1">
     </div>
     <div>
     <div class="head">
@@ -76,34 +76,53 @@
       <ul class="topnav-show" v-show="cur == 1">
         <ul class="ul11">
           <img class="img3" src="@/assets/images/drawable-xhdpi/ck1.png" alt="" width="25px">
-          <li class="li1">submissive</li>
-          <li class="li2">/seb'misiv/</li>
+          <li class="li1">butterfiy</li>
+          <li class="li2">/'b^terflaI/</li>
           <p>释义</p>
         </ul>
         <ul class="ul11">
           <img class="img3" src="@/assets/images/drawable-xhdpi/ck1.png" alt="" width="25px">
-          <li class="li1">submissive</li>
-          <li class="li2">/seb'misiv/</li>
+          <li class="li1">cenment</li>
+          <li class="li2">/sI'ment/</li>
           <p>释义</p>
         </ul>
         <ul class="ul11">
           <img class="img3" src="@/assets/images/drawable-xhdpi/ck1.png" alt="" width="25px">
-          <li class="li1">submissive</li>
-          <li class="li2">/seb'misiv/</li>
+          <li class="li1">century</li>
+          <li class="li2">/'sentferi/</li>
           <p>释义</p>
         </ul>
         <ul class="ul11">
           <img class="img3" src="@/assets/images/drawable-xhdpi/ck1.png" alt="" width="25px">
-          <li class="li1">submissive</li>
-          <li class="li2">/seb'misiv/</li>
+          <li class="li1">pilot</li>
+          <li class="li2">/'paIlet/</li>
           <p>释义</p>
         </ul>
+        <ul class="ul11">
+          <img class="img3" src="@/assets/images/drawable-xhdpi/ck1.png" alt="" width="25px">
+          <li class="li1">ton</li>
+          <li class="li2">/t^n/</li>
+          <p>释义</p>
+        </ul>
+        <ul class="ul11">
+          <img class="img3" src="@/assets/images/drawable-xhdpi/ck1.png" alt="" width="25px">
+          <li class="li1">knit</li>
+          <li class="li2">/nIt/</li>
+          <p>释义</p>
+        </ul>
+        
+        
       </ul>
       <ul class="topnav-show" v-show="cur == 2">
-        3
+       <img class="img24" src="@/assets/images/drawable-xhdpi/zzxx.png" alt="" width="100px" margin-letf:100px>
       </ul>
       <ul class="topnav-show" v-show="cur == 3">
-       123
+       <ul class="ul11">
+          <img class="img3" src="@/assets/images/drawable-xhdpi/ck1.png" alt="" width="25px">
+          <li class="li1">knit</li>
+          <li class="li2">/nIt/</li>
+          <p>释义</p>
+        </ul>
       </ul>
     </div>
     </div>
@@ -120,7 +139,14 @@ export default {
   },
   created() {},
   mounted() {},
-  methods: {},
+  methods: {
+    goPersonal(){
+      this.$router.push('/personal')
+    },
+    goClear1(){
+      this.$router.push('/clear1')
+    },
+  },
   computed: {}
 }
 </script>
@@ -219,7 +245,7 @@ p{
     float: left;
   }
 .ul11 .img3{
-  position: absolute;
+  
   margin-left: 15px;
   margin-top: 12px;
 }
@@ -228,19 +254,23 @@ p{
   height: 70px;
 }
 .ul11 .li1{
-  float: left;
+
   font-size: 20px;
-  margin-top: 12px;
+  margin-top:-30px;
   margin-left: 50px;
 }
 .ul11 .li2{
   color:rgb(172,174,157);
-  float: left;
-  margin-top: 16px;
+  padding-left: 140px;
+  margin-top: -90px;
 }
 .ul11 p{
   color: rgb(31,157,132);
   font-size: 13px;
-  margin-top: 35px;
+  margin-top: 75px;
+}
+.img24{
+  margin-left: 140px;
+  margin-top: 180px;
 }
 </style>

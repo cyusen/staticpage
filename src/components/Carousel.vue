@@ -9,9 +9,9 @@
         <input type="radio" name="slider" id="pic3" />
       </div>
       <div class="wrap">
-        <img style="height:100px; width:300px" src="https://i.loli.net/2020/05/25/caLQWHX4MArs1fx.png" alt="轮播图1" />
-        <img style="height:100px; width:300px" src="https://i.loli.net/2020/05/25/DpRrHlquGKiFLbT.jpg" alt="轮播图2" />
-        <img style="height:100px; width:300px"  src="https://i.loli.net/2020/05/25/AYeJ46ZMRStwH1D.jpg" alt="轮播图3" />
+        <img style="height:130px; width:375px" src="@/assets/images/drawable-xhdpi/lbt2.png" alt="轮播图1" />
+        <img style="height:130px; width:375px" src="@/assets/images/drawable-xhdpi/lb3.png" alt="轮播图2" />
+        <img style="height:130px; width:375px"  src="@/assets/images/drawable-xhdpi/lbt2.png" alt="轮播图3" />
       </div>
       <div class="page">
         <label for="pic1"></label>
@@ -44,10 +44,13 @@ export default {
   }
 }
 .wrap {
-  height: 180px;
+  background: #fff;
+  margin-top: 70px;
+  height: 130px;
   position: relative;
   width: 300vw;
   overflow: hidden;
+  border-bottom: 1px solid #999;
   animation: carousel linear 5s infinite 0s normal;
 }
 .wrap img {

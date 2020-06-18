@@ -2,7 +2,7 @@
 <div>
 <div class="one">
       <input   class="input" placeholder="查询英文或者中文">
-      <img class="img" src="@/assets/images/drawable-xhdpi/ld.png" width="20px" height="20px">
+      <img class="img" src="@/assets/images/drawable-xhdpi/ld.png" width="20px" height="20px" @click="goNotice">
     </div>
   <div class="all">
     <div class="cc"></div>
@@ -66,7 +66,11 @@ export default {
   },
   created() {},
   mounted() {},
-  methods: {},
+  methods: {
+    goNotice(){
+      this.$router.push('/notice')
+    },
+  },
   computed: {}
 }
 </script>

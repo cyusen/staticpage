@@ -38,6 +38,11 @@ const routes = [
         component: () => import('../views/notice/Notice.vue')
       },
       {
+        path: '/conch',
+        name: 'Conch',
+        component: () => import('../views/notice/Conch.vue')
+      },
+      {
         path: '/word',
         name: 'Word',
         component: () => import('../views/person/Word.vue')
@@ -51,6 +56,16 @@ const routes = [
         path: '/myword',
         name: 'Myword',
         component: () => import('../views/person/Myword.vue')
+      },
+      {
+        path: '/clear1',
+        name: 'Clear1',
+        component: () => import('../views/person/Myword/Clear1.vue')
+      },
+      {
+        path: '/bag',
+        name: 'Bag',
+        component: () => import('../views/person/Bag.vue')
       }
     ]
   }
