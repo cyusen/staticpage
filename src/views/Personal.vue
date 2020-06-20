@@ -40,19 +40,19 @@
       <ul class="fourth">
         <li  @click="goClass">课程<span>&rsaquo;</span></li>
         <li @click="goConch">贝壳<span>&rsaquo;</span><span class="shu">0个</span></li>
-        <li>兑换<span>&rsaquo;</span></li>
-        <li>活动<span>&rsaquo;</span></li>
+        <li @click="goConvert">兑换<span>&rsaquo;</span></li>
+        <li @click="goExercise">活动<span>&rsaquo;</span></li>
       </ul>
     </div>
     <div class="five">
       <ul class="fifth">
-      <li>短信<span>&rsaquo;</span></li>
+      <li @click="goMessage">短信<span>&rsaquo;</span></li>
       </ul>
     </div>
     <div class="last">
       <ul class="end">
       <li>帮助与反馈<span>&rsaquo;</span></li>
-      <li>设置<span>&rsaquo;</span></li>
+      <li @click="goSetting">设置<span>&rsaquo;</span></li>
       </ul>
     </div>
   </div>
@@ -78,6 +78,18 @@ export default {
     },
     goConch(){
       this.$router.push('/conch')
+    },
+    goConvert(){
+      this.$router.push('/convert')
+    },
+    goExercise(){
+      this.$router.push('/Exercise')
+    },
+    goMessage(){
+      this.$router.push('/Message')
+    },
+    goSetting(){
+      this.$router.push('/Setting')
     },
     goDcs(){
       this.$router.push('/word')

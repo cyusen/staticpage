@@ -43,6 +43,26 @@ const routes = [
         component: () => import('../views/notice/Conch.vue')
       },
       {
+        path: '/convert',
+        name: 'Convert',
+        component: () => import('../views/notice/Convert.vue')
+      },
+      {
+        path: '/exercise',
+        name: 'Exercise',
+        component: () => import('../views/notice/Exercise.vue')
+      },
+      {
+        path: '/message',
+        name: 'Message',
+        component: () => import('../views/notice/Message.vue')
+      },
+      {
+        path: '/setting',
+        name: 'Setting',
+        component: () => import('../views/notice/Setting.vue')
+      },
+      {
         path: '/word',
         name: 'Word',
         component: () => import('../views/person/Word.vue')
