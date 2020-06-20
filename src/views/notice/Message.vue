@@ -2,34 +2,29 @@
   <div>
     <div class="one">
       <img class="img0" src="@/assets/images/drawable-xhdpi/jt.png" width="20px" @click="goPersonal">
-      <p>活动</p>
+      <p>短信</p>
+      <img class="img1" src="@/assets/images/drawable-xhdpi/pencilpng.png" alt=""  width="40px" @click="goNew">
     </div>
     <div>
     <div class="head">
       <ul class="ul1">
         <li  @click="cur = 0" :class="{ active: cur == 0 }">
-          <span class="li0">全部</span>
+          <span class="li0">我的短信</span>
         </li>
         <li  @click="cur = 1" :class="{ active: cur == 1 }">
-          <span class="li1">我的</span>
+          <span class="li1">系统消息</span>
         </li>
       </ul>
     </div >
     <div class="show">
       <ul class="topnav-show" v-show="cur == 0">
           <div>
-        <img class="img1" src="@/assets/images/drawable-xhdpi/qb1.png" >
-        <p class="span1">打卡挑战|以书为海，以梦为马，赢东京电子书月卡</p>
-        <img class="img2" src="@/assets/images/drawable-xhdpi/qb2.png" >
-        <p class="span2">考研抢分大作战|狂撒百万补贴，每人最高可领140元！</p>
-        <img class="img3" src="@/assets/images/drawable-xhdpi/qb3.png" >
-        <p class="span3">考研打卡挑战|完成挑战，有机会得599元免单奖励</p>
-        <img class="img4" src="@/assets/images/drawable-xhdpi/qb4.png" >
-        <p class="span4">打卡挑战|以书为海，以梦为马，赢东京电子书月卡</p>
+              <img src="@/assets/images/drawable-xhdpi/xx.png" alt=""  width="100px">
+              <p>暂时没有短信<span>发短信</span></p>
         </div>
       </ul>
       <ul class="topnav-show" v-show="cur == 1">
-          <div> 到底了</div>
+          <div> </div>
       </ul>
     </div>
     </div>
@@ -49,6 +44,9 @@ export default {
   methods: {
     goPersonal(){
       this.$router.push('/personal')
+    },
+    goNew(){
+      this.$router.push('/new')
     },
   },
   computed: {}
@@ -71,50 +69,14 @@ export default {
   margin-top: 30px;
 }
 .img1{
-  margin-left: px;
-  margin-top: -30px;
-}
-.img2{
-  margin-left: 0px;
-  margin-top:-30px;
-}
-.img3{
-  margin-left:0px;
-  margin-top: -30px;
-}
-.img4{
-  margin-left: 0px;
-  margin-top:-30px;
-}
+    margin-left: 320px;
+    margin-top: 20px;
+    }
 p{
   font-size: 20px;
   position: absolute;
   margin-left: 50px;
   margin-top: 26px;
-}
-.span1{
-    color: #000;
-    font-size: 15px;
-    margin-left: 20px;
-    margin-top: -25px;  
-}
-.span2{
-  color: #000;
-    font-size: 15px;
-    margin-left: 20px;
-    margin-top: -25px;
-}
-.span3{
-   color: #000;
-    font-size: 15px;
-    margin-left: 20px;
-    margin-top: -25px;
-}
-.span4{
-    color: #000;
-    font-size: 15px;
-    margin-left: 20px;
-    margin-top: -25px;
 }
 .head{
     height: 300px;
@@ -128,6 +90,7 @@ p{
            background: rgb(255, 255, 255)
         }
        .ul1 li {
+           background: rgb(238,238,238);
             text-align: center;
             width: 50%;
             position: relative;
@@ -144,16 +107,16 @@ p{
             content: "";
             position: absolute;
             top: 0;
-            left: 100%;
+            left: 0;
             width: 0;
             height: 98%;
             border-bottom: 2px solid rgb(0, 0, 0);
             transition: 0.2s all linear;
         }
         li:hover::before {
-            width: 10%;
+            width: 100%;
             top: 0;
-            left: 85px;
+            left: 0px;
             transition-delay: 0.1s;
             border-bottom-color: rgb(44,164,139);
             z-index: 1;
@@ -161,17 +124,20 @@ p{
         li:hover ~ li::before {
             left: 0;
         }
-
+span:hover{
+    color: rgb(44,164,139);
+}
         li:active {
             background: rgb(255, 255, 255);
             color: #fff;
         }
   .show{
-   background: rgb(255, 255, 255);
+   background: rgb(238,238,238);
     height: 600px;
     margin-top: -210px;
   }
-  .topnav-show{
+  .show img{
+      margin-top: 100px;
   }
   .topnav-show div{
     padding-top: 15px;
@@ -180,6 +146,15 @@ p{
     font-size: 12px;
     color: #999;
   }
-
+.show div p{
+    color: #000;
+    font-size: 16px;
+    padding-left:60px ;
+}
+.show div span{
+    font-size: 16px;
+    padding-left:10px ;
+    color: rgb(44,164,139);
+}
 
 </style>

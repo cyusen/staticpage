@@ -83,6 +83,11 @@ const routes = [
         component: () => import('../views/person/Myword/Clear1.vue')
       },
       {
+        path: '/new',
+        name: 'New',
+        component: () => import('../views/person/Myword/New.vue')
+      },
+      {
         path: '/bag',
         name: 'Bag',
         component: () => import('../views/person/Bag.vue')

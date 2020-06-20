@@ -1,5 +1,6 @@
 <template>
   <div>
+    
     <div class="head"> 
         <img src="@/assets/images/drawable-xhdpi/jt.png" alt="" width="25px" height="25px" @click="goPersonal">
         <p>我的课程</p>
