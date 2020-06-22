@@ -1,6 +1,7 @@
 <template>
   <div>
     <div class="one">
+      <img class="img0" src="@/assets/images/drawable-xhdpi/ss.png" width="20px" >
       <input   class="input" placeholder="查询英文或者中文">
       <img class="img" src="@/assets/images/drawable-xhdpi/ld.png" width="20px" height="20px"  @click="goNotice">
     </div>
@@ -20,7 +21,7 @@
           <span class="li3">听力口语</span>
         </li>
         <li  @click="cur = 4" :class="{ active: cur == 4 }">
-          <span class="li4">编程</span>
+          <span  @click="goPython" class="li4">编程</span>
         </li>
       </ul>
     </div >
@@ -202,12 +203,20 @@ export default {
      goNotice(){
       this.$router.push('/notice')
     },
+     goPython(){
+      this.$router.push('/python')
+    },
   },
   computed: {}
 }
 </script>
 
 <style scoped lang="scss">
+.img0{
+  position: absolute;
+  margin-left: 25px;
+  margin-top: 35px;
+}
 .one{
   position: fixed;
   top: 0;
@@ -219,7 +228,6 @@ export default {
 }
 .input{
   padding-left: 30px;
-  position:absolute;
   margin-top: 30px;
   background: rgb(242, 242,242);
   margin-left: 20px;
@@ -227,8 +235,9 @@ export default {
   height: 30px;
 }
 .img{
+  position: absolute;
   margin-top: 33px;
-  margin-left: 335px;}
+  margin-left: 10px;}
 .head{
     height: 300px;
   }

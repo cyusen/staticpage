@@ -3,6 +3,7 @@
   <div>
     <div>
     <div class="one">
+      <img class="img0" src="@/assets/images/drawable-xhdpi/ss.png" width="20px" >
       <input   class="input"  placeholder="查询英文或者中文">
       <img class="img" src="@/assets/images/drawable-xhdpi/ld.png" width="20px" height="20px" @click="goNotice" >
     </div>
@@ -23,7 +24,7 @@
         <img src="@/assets/images/drawable-xhdpi/hd.png" alt="" width="35px" >
         <p>活动</p>
       </div>
-      <div @click="Kzb">
+      <div @click="goKzb">
         <img src="@/assets/images/drawable-xhdpi/mryj.png" alt="" width="35px" >
         <p>每日一句</p>
       </div>
@@ -38,7 +39,7 @@
       <ul>
         <img class="i0" src="@/assets/images/drawable-xhdpi/mryj1.png" alt="" width="40px">
         <span class="span0">每日一句</span>
-        <span class="span1">&rsaquo;</span>
+        <span @click="goKzb" class="span1">&rsaquo;</span>
         <img class="i1" src="@/assets/images/drawable-xhdpi/b1.png" alt="" width="70px">
         <p>The most profound statements are often said in...</p>
       </ul>
@@ -90,12 +91,29 @@ export default {
     goNotice(){
       this.$router.push('/notice')
     },
+    goJd(){
+      this.$router.push('/exercise')
+    },
+    goDcs(){
+      this.$router.push('/choice')
+    },
+    goCk(){
+      this.$router.push('/shop')
+    },
+     goKzb(){
+      this.$router.push('/every')
+    },
   },
   computed: {}
 }
 </script>
 
 <style scoped lang="scss">
+.img0{
+  position: absolute;
+  margin-left: 25px;
+  margin-top: 35px;
+}
 .one{
   position: fixed;
   top: 0;
@@ -107,7 +125,6 @@ export default {
 }
 .input{
   padding-left: 30px;
-  position:absolute;
   margin-top: 30px;
   background: rgb(242, 242,242);
   margin-left: 20px;
@@ -115,8 +132,9 @@ export default {
   height: 30px;
 }
 .img{
+  position: absolute;
   margin-top: 33px;
-  margin-left: 340px;}
+  margin-left: 10px;}
 .three{
   margin-top: 0px;
   height: 80px;

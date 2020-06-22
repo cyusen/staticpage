@@ -33,6 +33,31 @@ const routes = [
         component: () => import('../views/Personal.vue')
       },
       {
+        path: '/self',
+        name: 'Self',
+        component: () => import('../views/first/Self.vue')
+      },
+      {
+        path: '/choice',
+        name: 'Choice',
+        component: () => import('../views/find/Choice.vue')
+      },
+      {
+        path: '/python',
+        name: 'Python',
+        component: () => import('../views/find/Python.vue')
+      },
+      {
+        path: '/every',
+        name: 'Every',
+        component: () => import('../views/find/Every.vue')
+      },
+      {
+        path: '/shop',
+        name: 'Shop',
+        component: () => import('../views/find/Shop.vue')
+      },
+      {
         path: '/notice',
         name: 'Notice',
         component: () => import('../views/notice/Notice.vue')
@@ -63,9 +88,29 @@ const routes = [
         component: () => import('../views/notice/Setting.vue')
       },
       {
+        path: '/help',
+        name: 'Help',
+        component: () => import('../views/notice/Help.vue')
+      },
+      {
         path: '/word',
         name: 'Word',
         component: () => import('../views/person/Word.vue')
+      },
+      {
+        path: '/pencil',
+        name: 'Pencil',
+        component: () => import('../views/person/Myword/Pencil.vue')
+      },
+      {
+        path: '/book',
+        name: 'Book',
+        component: () => import('../views/person/Myword/Book.vue')
+      },
+      {
+        path: '/things',
+        name: 'Things',
+        component: () => import('../views/person/Myword/Things.vue')
       },
       {
         path: '/myclass',

@@ -1,7 +1,9 @@
 <template>
   <div>
     <div class="one">
+      <img class="img0" src="@/assets/images/drawable-xhdpi/ss.png" width="20px" >
       <input   class="input"  placeholder="查询英文或者中文">
+       <img class="img00" src="@/assets/images/drawable-xhdpi/sys.png" width="30px" height="30px"  >
       <img class="img" src="@/assets/images/drawable-xhdpi/ld.png" width="20px" height="20px" @click="goNotice" >
     </div>
   <div class="all">
@@ -45,13 +47,13 @@
       </ul>
     </div>
     <div class="five">
-      <ul class="fifth">
+      <ul  class="fifth">
       <li @click="goMessage">短信<span>&rsaquo;</span></li>
       </ul>
     </div>
     <div class="last">
       <ul class="end">
-      <li>帮助与反馈<span>&rsaquo;</span></li>
+      <li @click="goHelp">帮助与反馈<span>&rsaquo;</span></li>
       <li @click="goSetting">设置<span>&rsaquo;</span></li>
       </ul>
     </div>
@@ -91,6 +93,9 @@ export default {
     goSetting(){
       this.$router.push('/Setting')
     },
+    goHelp(){
+      this.$router.push('/Help')
+    },
     goDcs(){
       this.$router.push('/word')
     },
@@ -109,6 +114,11 @@ export default {
 </script>
 
 <style scoped lang="scss">
+.img0{
+  position: absolute;
+  margin-left: 25px;
+  margin-top: 35px;
+}
 .one{
   position: fixed;
   top: 0;
@@ -120,16 +130,21 @@ export default {
 }
 .input{
   padding-left: 30px;
-  position:absolute;
   margin-top: 30px;
   background: rgb(242, 242,242);
   margin-left: 20px;
-  width: 310px;
+  width: 270px;
   height: 30px;
 }
+.img00{
+  position: absolute;
+  margin-left: 10px;
+   margin-top: 30px;
+}
 .img{
-  margin-top: 33px;
-  margin-left: 340px;}
+  position: absolute;
+  margin-top: 35px;
+  margin-left: 50px;}
 .all{
   background: rgb(236, 233, 233);
 }
