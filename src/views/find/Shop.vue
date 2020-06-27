@@ -148,7 +148,9 @@ export default {
             border-bottom: 2px solid rgb(238,238,238);
             transition: 0.2s all linear;
         }
-
+        img :hover{
+          
+        }
         p:hover{
           color: rgb(44,164,139);
         }
@@ -205,4 +207,5 @@ export default {
       float: right;
       padding-right: 10px;
   }
+  
 </style>

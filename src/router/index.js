@@ -38,6 +38,11 @@ const routes = [
         component: () => import('../views/first/Self.vue')
       },
       {
+        path: '/choose',
+        name: 'Choose',
+        component: () => import('../views/first/Choose.vue')
+      },
+      {
         path: '/choice',
         name: 'Choice',
         component: () => import('../views/find/Choice.vue')
@@ -51,6 +56,11 @@ const routes = [
         path: '/every',
         name: 'Every',
         component: () => import('../views/find/Every.vue')
+      },
+      {
+        path: '/answer',
+        name: 'Answer',
+        component: () => import('../views/find/Answer.vue')
       },
       {
         path: '/shop',
@@ -136,6 +146,11 @@ const routes = [
         path: '/bag',
         name: 'Bag',
         component: () => import('../views/person/Bag.vue')
+      },
+      {
+        path: '/plan',
+        name: 'Plan',
+        component: () => import('../views/person/Plan.vue')
       }
     ]
   }

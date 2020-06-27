@@ -7,7 +7,6 @@
     </div>
   <div class="all">
     <div class="cc"></div>
-    
     <div class="two">
       <div class="hi" >
       <img src="@/assets/images/drawable-xhdpi/hi.png" alt="" width="200px">
@@ -35,7 +34,7 @@
       <img class="img1" src="@/assets/images/drawable-xhdpi/yd.png" height="30px" width="30px">
       <li>阅读</li>
       <img class="img1" src="@/assets/images/drawable-xhdpi/dj.png" height="30px" width="30px">
-      <li>短语</li>
+      <li @click="goChoose">短语</li>
       <img class="img1" src="@/assets/images/drawable-xhdpi/lj.png" height="30px" width="30px">
       <li>炼句</li>
       </ul>
@@ -74,6 +73,9 @@ export default {
     goSelf(){
       this.$router.push('/self')
     },
+    goChoose(){
+      this.$router.push('/choose')
+    }
   },
   computed: {}
 }
@@ -171,6 +173,7 @@ button{
   margin-left: 30px;
 }
 .li2 li{
+  
   text-align: center;
   width: 20%;
   padding-top: 65px;

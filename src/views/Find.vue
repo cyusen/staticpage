@@ -46,7 +46,7 @@
       <ul>
         <img class="i0" src="@/assets/images/drawable-xhdpi/nwwd.png" alt="" width="40px">
         <span class="span0">你问我答</span>
-        <span class="span1">&rsaquo;</span>
+        <span @click="goAnswer" class="span1">&rsaquo;</span>
         <img class="i1" src="@/assets/images/drawable-xhdpi/b2.png" alt="" width="70px">
         <p>metal=金属,那pedal to the metal=?</p>
       </ul>
@@ -102,6 +102,9 @@ export default {
     },
      goKzb(){
       this.$router.push('/every')
+    },
+    goAnswer(){
+      this.$router.push('/answer')
     },
   },
   computed: {}

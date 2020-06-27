@@ -107,6 +107,9 @@ export default {
     },
     goKzb(){
       this.$router.push('/bag')
+    },
+    goJd(){
+      this.$router.push('/plan')
     }
   },
   computed: {}
